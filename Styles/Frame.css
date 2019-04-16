@@ -206,7 +206,7 @@ body {
 	padding: 0;
 	
 	text-transform: uppercase;
-	font-family: 'Century-Gothic-Bold', sans-serif;
+	font-family: 'CenturyGothic-Bold', sans-serif;
 	font-size: 1.7em;
 }
 .Container-Prices .Blok-Price h3 {
@@ -214,18 +214,18 @@ body {
 	padding: 0;
 
 	text-transform: uppercase;
-	font-family: 'Century-Gothic-Bold', sans-serif;
+	font-family: 'CenturyGothic-Bold', sans-serif;
 	font-size: 2em;
 }
 .Container-Prices .Blok-Price p {
 	margin: 0;
 	padding: 0;
-	font-family: 'Century-Gothic-Regular', sans-serif;
+	font-family: 'CenturyGothic-Regular', sans-serif;
 }
 .Container-Prices .Blok-Price a {
 	text-decoration: none;
 	color: rgb(234, 142, 0);
-	font-family: 'Century-Gothic-Regular', sans-serif;
+	font-family: 'CenturyGothic-Regular', sans-serif;
 }
 .Container-Prices .Blok-Price a:hover {
 	padding-bottom: 2px;
@@ -246,7 +246,7 @@ body {
 
 	width: 100%;
 
-	font-family: 'Century-Gothic-Bold', sans-serif;
+	font-family: 'CenturyGothic-Bold', sans-serif;
 	font-size: 1.1em;
 
 	border: 2px solid rgb(0, 150, 0);
@@ -258,7 +258,7 @@ body {
 .Container-Prices .Blok-Price .Button-Order:hover {
 	background-color: rgb(0, 150, 0);
 
-	font-family: 'Century-Gothic-Bold', sans-serif;
+	font-family: 'CenturyGothic-Bold', sans-serif;
 	color: rgb(255, 255, 255);
 }
 

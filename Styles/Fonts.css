@@ -2,15 +2,23 @@
 /* -- Roboto -- */
 @font-face {
 	font-family: 'Roboto-Regular';
-	src: url('../Fonts/Roboto/Roboto-Regular.ttf'); }
+	src: url('../Fonts/Roboto/Roboto - Regular.ttf'); }
 @font-face {
 	font-family: 'Roboto-Bold';
-	src: url('../Fonts/Roboto/Roboto-Bold.ttf'); }
+	src: url('../Fonts/Roboto/Roboto - Bold.ttf'); }
 
 /* -- Montserrat -- */
 @font-face {
 	font-family: 'Montserrat-Regular';
-	src: url('../Fonts/Montserrat/Montserrat-Regular.ttf'); }
+	src: url('../Fonts/Montserrat/Montserrat - Regular.ttf'); }
 @font-face {
 	font-family: 'Montserrat-Bold';
-	src: url('../Fonts/Montserrat/Montserrat-Bold.ttf'); }
+	src: url('../Fonts/Montserrat/Montserrat - Bold.ttf'); }
+
+/* -- Century Gothic -- */
+@font-face {
+	font-family: 'CenturyGothic-Regular';
+	src: url('../Fonts/Montserrat/Century Gothic - Regular.ttf'); }
+@font-face {
+	font-family: 'CenturyGothic-Bold';
+	src: url('../Fonts/Montserrat/Century Gothic - Bold.ttf'); }
