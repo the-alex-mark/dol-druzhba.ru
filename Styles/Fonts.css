@@ -1,0 +1,16 @@
+
+/* -- Roboto -- */
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('../Fonts/Roboto/Roboto-Regular.ttf'); }
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('../Fonts/Roboto/Roboto-Bold.ttf'); }
+
+/* -- Montserrat -- */
+@font-face {
+	font-family: 'Montserrat-Regular';
+	src: url('../Fonts/Montserrat/Montserrat-Regular.ttf'); }
+@font-face {
+	font-family: 'Montserrat-Bold';
+	src: url('../Fonts/Montserrat/Montserrat-Bold.ttf'); }
