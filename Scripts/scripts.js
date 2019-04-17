@@ -2,9 +2,10 @@
 
 	"use strict";
 	
-	var handheldBreakpoint = 980;	//media query breakpoint at which the mobile menu is shown
+	var handheldBreakpoint = 980;	// точка останова медиа-запроса, в которой отображается мобильное меню
 
 	// seamless internal links scroll
+	// бесшовные внутренние ссылки прокрутка
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 
@@ -18,7 +19,8 @@
 	    });
 	});
 
-	//  dropdownmenu, megamenu
+	// dropdownmenu, megamenu
+	// выпадающее меню, mega menu
 	jQuery('.children, .sub-menu').hide();
 	jQuery('#header nav #menu > ul li:has(ul)').on('mouseenter', function() {
 		if ( jQuery(window).width() > handheldBreakpoint ) {
@@ -37,6 +39,7 @@
 	
 
 	// header menu burger
+	// заголовок бургер меню 
 	jQuery('#header nav #menu-burger').on('click', function() {
 		jQuery('#header nav #menu').toggleClass('menu-shown');
 	});
