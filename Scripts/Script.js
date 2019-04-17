@@ -1,10 +1,10 @@
 $(document).ready(function($) {
 	// Обновление информации о лагере в Footer (Телефоны и Авторсие права)
 	let _phones = document.getElementsByClassName('Contacts')[0].getElementsByTagName('h5')[0];
-	_phones.innerHTML = Information['phones'][0] + '<br>' + Information['phones'][1];
+	_phones.innerHTML = _information['phones'][0] + '<br>' + _information['phones'][1];
 	
 	let _copyright = document.getElementsByClassName('Copyright')[0].getElementsByTagName('p')[0];
-	_copyright.innerHTML = Information["copyright"];
+	_copyright.innerHTML = _information["copyright"];
 	
 	// Отображение Menu и Filter в мобильной версии
 	$('#Menu').on('click', function(event) {
