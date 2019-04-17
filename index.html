@@ -215,25 +215,10 @@
 		<script src="Scripts/Script.js"></script>
 
 		<script>
-			/*$('.Slider-Bloks').slick({
-				arrows: false,
-				dots: true,
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				infinite: true,
-				autoplay: true,
-
-				responsive: [{
-		      breakpoint: 767,
-		      settings: {
-		      	arrows: false,
-		      	dots: true,
-		      	slidesToShow: 1,
-		      	slidesToScroll: 1,
-		      	autoplay: true
-		      }
-		    },]
-			});*/
+			window.onload = function() {
+				let Copyright = document.getElementsByTagName('Copyright')[0];
+				Copyright.innerHTML = '© ДОЛ "Дружба", 3020 г. Все права защищены.';
+			};
 
 			$('.Slider-Photos').slick({
 				arrows: false,
