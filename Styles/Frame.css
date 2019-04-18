@@ -138,6 +138,9 @@ body {
 	background-color: transparent;
 	border-radius: 5px;
 }
+.SideBar-Category a {
+	color: rgb(19, 19, 19);
+}
 .SideBar-Category img {
 	margin: 0;
 	padding: 0;
