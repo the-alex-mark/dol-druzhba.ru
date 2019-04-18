@@ -2,6 +2,10 @@ $(document).ready(function($) {
 	// Обновление информации о лагере в Footer (Телефоны и Авторсие права)
 	let _phones = document.getElementsByClassName('Contacts')[0].getElementsByTagName('h5')[0];
 	_phones.innerHTML = _information['phones'][0] + '<br>' + _information['phones'][1];
+
+	$('.sl-vk').each(function() {
+		$(this).attr('href', _information['social']["vk"]);
+	});
 	
 	let _copyright = document.getElementsByClassName('Copyright')[0].getElementsByTagName('p')[0];
 	_copyright.innerHTML = _information["copyright"];
@@ -93,29 +97,32 @@ $(document).ready(function($) {
 
 	// --------------------------------------------------------------------------------------------------
 	// -- Работа с модальными окнами (Magnific-Popup.js / Magnific-Popup.css)
-	jQuery('.Gallery').magnificPopup({
-		delegate: 'a.popup',
-		type: 'image',
-		tLoading: 'Загрузка изображения #%curr% ...',
-		gallery: {
-			enabled: true,
-			tPrev: 'Назад',
-			tNext: 'Вперёд',
-			tCounter: 'Изображение %curr% из %total%'
-		},
-		image: {
-			cursor: 'mfp-zoom-out-cur',
-			tError: 'Не удалось загрузить изображение!',
-			titleSrc: 'alt'					  
-		},
-	  	mainClass: 'mfp-with-zoom',
-		zoom: {
-			enabled: true,
-			duration: 300,
-			easing: 'ease-in-out',
-			opener: function(openerElement) {
-				return openerElement.is('img') ? openerElement : openerElement.find('img');
+	try {
+		jQuery('.Gallery').magnificPopup({
+			delegate: 'a.popup',
+			type: 'image',
+			tLoading: 'Загрузка изображения #%curr% ...',
+			gallery: {
+				enabled: true,
+				tPrev: 'Назад',
+				tNext: 'Вперёд',
+				tCounter: 'Изображение %curr% из %total%'
+			},
+			image: {
+				cursor: 'mfp-zoom-out-cur',
+				tError: 'Не удалось загрузить изображение!',
+				titleSrc: 'alt'					  
+			},
+			mainClass: 'mfp-with-zoom',
+			zoom: {
+				enabled: true,
+				duration: 300,
+				easing: 'ease-in-out',
+				opener: function(openerElement) {
+					return openerElement.is('img') ? openerElement : openerElement.find('img');
+				}
 			}
-		}
-	});
+		});
+	}
+	catch (err) { }
 });

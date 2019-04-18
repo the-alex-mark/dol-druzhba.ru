@@ -1,5 +1,6 @@
 let _information = {
     "phones": [ "8 777 666 55 44", "8 777 666 55 44" ],
+    "social": { "vk": "https://vk.com/club94887891" },
     "copyright": "© ДОЛ \"Дружба\", " + new Date().getFullYear() + " г. Все права защищены."
 }
 
