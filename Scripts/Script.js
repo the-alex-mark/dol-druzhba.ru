@@ -23,4 +23,13 @@ $(document).ready(function($) {
 		else { $('.SideBar .Menu').slideToggle(300); }
 	});
 	
+	// Плавное перемещение до нужного ID
+	$(document).ready(function() {
+		$(".Smooth-Move").on("click", function (event) {
+			event.preventDefault();
+			var id = $(this).attr('href'), 
+			top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 1200);
+		});
+	});
 });
