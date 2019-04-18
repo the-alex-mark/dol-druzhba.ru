@@ -3,9 +3,8 @@ $(document).ready(function($) {
 	let _phones = document.getElementsByClassName('Contacts')[0].getElementsByTagName('h5')[0];
 	_phones.innerHTML = _information['phones'][0] + '<br>' + _information['phones'][1];
 
-	$('.sl-vk').each(function() {
-		$(this).attr('href', _information['social']["vk"]);
-	});
+	let _vk = document.getElementsByClassName('sl-vk')[0];
+	_vk.href = _information['social']["vk"];
 	
 	let _copyright = document.getElementsByClassName('Copyright')[0].getElementsByTagName('p')[0];
 	_copyright.innerHTML = _information["copyright"];
