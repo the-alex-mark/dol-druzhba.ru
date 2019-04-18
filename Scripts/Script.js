@@ -33,3 +33,13 @@ $(document).ready(function($) {
 		});
 	});
 });
+
+// Настройки слайденра на главной странице
+$('.Slider-Photos').slick({
+	arrows: false,
+	dots: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	infinite: true,
+	autoplay: true			
+});
