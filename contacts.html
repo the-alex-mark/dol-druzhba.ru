@@ -101,28 +101,39 @@
 							<hr class="Separator">
 							<h1 id="Out" style="text-align: right;">Обратная связь</h1>
 						
-							<div id="message"></div>
-							<form method="post" name="contactform" id="contactform">
+							<div class="container">
+								<form method="post" class="Support-Form">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="input-text">
+												<!-- <label class="label-text" for="name" accesskey="U">Имя</label> -->
+												<p>Имя</p>
+												<input name="name" type="text"  value="" />
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="input-text">
+												<!-- <label for="email" accesskey="U">Электронная почта</label> -->
+												<p>Электронная почта</p>
+												<input name="email" type="text"  value="" />
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+												<!-- <label for="comments" accesskey="C">Комментарий</label> -->
+												<p>Комментарий</p>
+												<textarea name="message" rows="8" id="comments"></textarea>
+												<div class="submit">
+													<input type="submit" class="support" id="submit" value="Отправить">
+												</div>
+										</div>
+									</div>
 
-							<!-- <fieldset> -->
-								<p class="form-column">
-									<label for="name" accesskey="U"><span class="required">*</span> Имя</label>
-									<input name="name" type="text" id="name" size="30" value="" />
-								</p>
-								<p class="form-column">
-									<label for="email" accesskey="E"><span class="required">*</span> Email</label>
-									<input name="email" type="text" id="email" size="30" value="" />
-								</p>
+								</form>
+							</div>
 
-								<p>
-									<label for="comments" accesskey="C"><span class="required">*</span> Комментарий</label>
-									<textarea name="message" cols="40" rows="3" id="comments"></textarea>
-								</p>
 
-								<p><a href="#"><input type="submit" class="support" id="submit" value="Send"></a></p>
-							<!-- </fieldset> -->
-
-							</form>
 						</div>
 
 					</div>
