@@ -38,61 +38,67 @@ $(document).ready(function($) {
 
 	// --------------------------------------------------------------------------------------------------
 	// Настройки слайденра на главной странице
-	$('.Slider-Photos').slick({
-		arrows: false,
-		dots: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		infinite: true,
-		autoplay: true			
-	});
+	try {
+		$('.Slider-Photos').slick({
+			arrows: false,
+			dots: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			infinite: true,
+			autoplay: true			
+		});
+	}
+	catch (err) { }
 
 	// --------------------------------------------------------------------------------------------------
 	// -- Работа с Gallery (Isotope.js)
-	var $Gallery = jQuery('.Gallery');
-	if ($Gallery.length > 0) {
+	try {
+		var $Gallery = jQuery('.Gallery');
+		if ($Gallery.length > 0) {
 
-		$Gallery.each(function(index, element) {
-			var $Items = $(element).find('.Item');
-		
-			// Набор макета кладки 
-			$(element).isotope({
-				masonry: { columnWidth: $(element).find('.Item')[0] },
-				itemSelector: '.Item'
-			});
-			$(element).isotope('layout');
-				
-			// Фильтрация (One / Two / Three)
-			jQuery('.Gallery-Filter li a').on('click', function(){
-				jQuery('.Gallery-Filter li a').removeClass('Active');
-				jQuery(this).addClass('Active');
-				var selector = jQuery(this).attr('data-filter');
-				$Gallery.isotope({ filter: selector });
-				return false;
-			});
+			$Gallery.each(function(index, element) {
+				var $Items = $(element).find('.Item');
+			
+				// Набор макета кладки 
+				$(element).isotope({
+					masonry: { columnWidth: $(element).find('.Item')[0] },
+					itemSelector: '.Item'
+				});
+				$(element).isotope('layout');
+					
+				// Фильтрация (One / Two / Three)
+				jQuery('.Gallery-Filter li a').on('click', function(){
+					jQuery('.Gallery-Filter li a').removeClass('Active');
+					jQuery(this).addClass('Active');
+					var selector = jQuery(this).attr('data-filter');
+					$Gallery.isotope({ filter: selector });
+					return false;
+				});
 
-			// Фильтрация (One / Two / Three) - Мобильное меню
-			jQuery('#Period li a').on('click', function(){
-				jQuery('#Period li a').removeClass('Active');
-				jQuery(this).addClass('Active');
-				var selector = jQuery(this).attr('data-filter');
-				$Gallery.isotope({ filter: selector });
-				return false;
-			});
+				// Фильтрация (One / Two / Three) - Мобильное меню
+				jQuery('#Period li a').on('click', function(){
+					jQuery('#Period li a').removeClass('Active');
+					jQuery(this).addClass('Active');
+					var selector = jQuery(this).attr('data-filter');
+					$Gallery.isotope({ filter: selector });
+					return false;
+				});
 
-			// Изменение количества столбцов
-			jQuery('.Gallery-Sizing .Button').on('click', function(){
-				jQuery('.Gallery-Sizing .Button').removeClass('Active');
-				jQuery(this).toggleClass('Active');
+				// Изменение количества столбцов
+				jQuery('.Gallery-Sizing .Button').on('click', function(){
+					jQuery('.Gallery-Sizing .Button').removeClass('Active');
+					jQuery(this).toggleClass('Active');
 
-				$Items.removeClass('column-3');
-				$Items.removeClass('column-4');
-				$Items.removeClass('column-5');
-				$Items.toggleClass(jQuery(this).closest('a').attr('class'));
-				$Gallery.isotope('layout');
+					$Items.removeClass('column-3');
+					$Items.removeClass('column-4');
+					$Items.removeClass('column-5');
+					$Items.toggleClass(jQuery(this).closest('a').attr('class'));
+					$Gallery.isotope('layout');
+				});
 			});
-		});
+		}
 	}
+	catch (err) { }
 
 	// --------------------------------------------------------------------------------------------------
 	// -- Работа с модальными окнами (Magnific-Popup.js / Magnific-Popup.css)

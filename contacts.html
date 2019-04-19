@@ -95,9 +95,35 @@
 					<div class="Content">
 
 						<div class="Content-Contacts">
-                            <h1 id="Map" style="text-align: right;">Мы на карте</h1>
-                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae3374fd494d9f1da75cae8d740c53f05787485d8536898bfac51a75a171ab10d&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
-                        </div>
+							<h1 id="Map" style="text-align: right;">Мы на карте</h1>
+							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae3374fd494d9f1da75cae8d740c53f05787485d8536898bfac51a75a171ab10d&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+
+							<hr class="Separator">
+							<h1 id="Out" style="text-align: right;">Обратная связь</h1>
+						
+							<div id="message"></div>
+							<form method="post" name="contactform" id="contactform">
+
+							<!-- <fieldset> -->
+								<p class="form-column">
+									<label for="name" accesskey="U"><span class="required">*</span> Имя</label>
+									<input name="name" type="text" id="name" size="30" value="" />
+								</p>
+								<p class="form-column">
+									<label for="email" accesskey="E"><span class="required">*</span> Email</label>
+									<input name="email" type="text" id="email" size="30" value="" />
+								</p>
+
+								<p>
+									<label for="comments" accesskey="C"><span class="required">*</span> Комментарий</label>
+									<textarea name="message" cols="40" rows="3" id="comments"></textarea>
+								</p>
+
+								<p><a href="#"><input type="submit" class="support" id="submit" value="Send"></a></p>
+							<!-- </fieldset> -->
+
+							</form>
+						</div>
 
 					</div>
 				</div>
@@ -154,9 +180,19 @@
 		</footer>
 
 		<!-- Подключение SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>        <!-- Плагин для работы с "Google Maps"   -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>        <!-- Плагин для работы с "Google Maps"   -->
 		<script src="Scripts/Data.js"></script>
 		<script src="Scripts/Script.js"></script>
+
+		<script>
+			$('[class="support"]').click(function() {
+				$.post(
+					"Scripts/Support.php",
+					{ name: $('[name="name"]').val(), email: $('[name="email"]').val(), message: $('[name="message"]').val() },
+					function(data) { alert(data);
+				});
+			});
+		</script>
 		
 	</body>
 </html>
