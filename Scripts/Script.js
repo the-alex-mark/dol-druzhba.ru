@@ -1,3 +1,7 @@
+// window.addEventListener('load', function(){
+// 	setTimeout(scrollTo, 0, 0, 1);
+// }, false);
+
 $(document).ready(function($) {
 	// Обновление информации о лагере в Footer (Телефоны и Авторсие права)
 	let _phones = document.getElementsByClassName('Contacts')[0].getElementsByTagName('h5')[0];
