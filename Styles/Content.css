@@ -283,3 +283,37 @@
 .Support-Form .submit {
 	text-align: left;
 }
+
+
+table {
+	margin: 0;
+	padding: 0;
+
+	width: 100%;
+
+	
+	border: 2px solid rgb(255, 220, 96);
+	border-collapse: collapse;
+}
+
+table tr th {
+	margin: 0;
+	padding: 5px 20px 5px 20px;
+
+	height: 40px;
+
+	text-align: center;
+	font-family: 'Montserrat-Bold', sans-serif;
+	font-size: 1.2em;
+	background-color: rgba(255, 221, 96, 0.26);
+	border: 2px solid rgb(255, 220, 96);
+}
+
+table tr td {
+	margin: 0;
+	padding: 10px 10px 10px 10px;
+
+	font-family: 'Montserrat-Regular', sans-serif;
+	font-size: 1.1em;
+	border-right: 2px solid rgb(255, 220, 96);
+}
