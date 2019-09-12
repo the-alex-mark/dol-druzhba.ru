@@ -132,7 +132,8 @@ body {
 
 .SideBar-Menu .Active {
 	padding: 7px 30px 7px 27px;
-	background-color: rgba(255, 221, 96, 0.4);
+	/* background-color: rgba(255, 221, 96, 0.4); */
+	background-color: rgb(255, 0, 0);
 	border-left: 3px solid rgb(255, 221, 96);
 }
 
