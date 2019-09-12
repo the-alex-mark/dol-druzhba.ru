@@ -7,7 +7,11 @@ let _information = {
         "Администратор":         { "ФИО": "Свечникова Лилия Аркадьевна", "Телефон": "000-000" },
         "Педагог-Организатор":   { "ФИО": "Субботина Ольга Максимовна",  "Телефон": "000-000" }
     },
-    "social": { "vk": "https://vk.com/club94887891" },
+    "social":
+    {
+        "vk": "https://vk.com/club94887891",
+        "instagram": "https://www.instagram.com/_dol_druzhba_"
+    },
     "copyright": "© ДОЛ \"Дружба\", " + new Date().getFullYear() + " г. Все права защищены."
 }
 
