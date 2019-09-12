@@ -1,20 +1,6 @@
 /* Подключение сторонних шрифтов */
 @import url("Fonts.css");
 
-body {
-    margin: 0;
-    padding: 0;
-
-    background-color: rgb(238, 243, 245);
-}
-
-.content {
-    margin: 0;
-    padding: 30px 100px 30px 350px;
-
-    /* border: 1px solid red; */
-}
-
 .new {
     display: flex;
     /* align-items: center; */
@@ -25,7 +11,7 @@ body {
     margin: 0 0 10px 0;
     padding: 0;
     /* max-height: 150px; */
-    border: 1px solid rgb(219, 231, 235);
+    /* border: 1px solid rgb(219, 231, 235); */
     background-color: #FFFFFF;
     /* border: 1px solid red; */
     border-radius: 5px;
