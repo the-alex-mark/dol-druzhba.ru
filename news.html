@@ -13,6 +13,9 @@
 		<link rel="stylesheet" href="Plugins/Slick/slick.css">
 
 		<!-- Подключение STYLES -->
+		<link rel="stylesheet" href="Styles/fontello.css">
+		<link rel="stylesheet" href="Styles/modal-dialog.css">
+
 		<link rel="stylesheet" href="Styles/ScrollBar.css">
 		<link rel="stylesheet" href="Styles/Bootstrap-Grid.min.css">
 		<link rel="stylesheet" href="Styles/Columns.min.css">
@@ -22,12 +25,48 @@
 	</head>
 
 	<body>
-
-		<!-- LOADER-->
-		<!--
-		<div class="loadreveal"></div>
-		<div id="loadscreen"><div id="loader"></div></div>
-		 -->
+		
+		<div id="md-overlay" class="md-overlay">
+			<div class="md-container">
+				<div class="md-content">
+	
+					<div class="md-title">
+	
+						<!-- Кнопка закрытия окна -->
+						<div class="md-close"></div>
+	
+						<!-- Автор статьи -->
+						<div class="md-author">
+							<img id="md-author-logo" src="Resources/logo.png" alt="">
+							<div class="md-author-data">
+								<b id="md-author-name">Администрация лагеря</b>
+								<small id="md-author-date">30 авг 2019 в 13:01</small>
+							</div>
+						</div>
+	
+						<!-- Поделиться -->
+						<div class="md-share">
+							<ul class="social-list">
+								<li><a title='Поделиться во "ВКонтакте"' target="_blank" onclick="Share('vk.com', 'https://the-alex-mark.github.io'); return false;" class="ico-vkontakte"><i class="icon-vkontakte"></i></a></li>
+								<li><a title='Поделиться в "Одноклассники"' target="_blank" onclick="Share('ok.ru', 'https://the-alex-mark.github.io'); return false;" class="ico-odnoklassniki"><i class="icon-odnoklassniki"></i></a></li>
+								<li><a title='Поделиться на "Facebook"' target="_blank" onclick="Share('facebook.com', 'https://the-alex-mark.github.io'); return false;" class="ico-facebook"><i class="icon-facebook"></i></a></li>
+								<li><a title='Поделиться в "Twitter"' target="_blank" onclick="Share('twitter.com', 'https://the-alex-mark.github.io'); return false;" class="ico-twitter"><i class="icon-twitter"></i></a></li>
+								<li><a title='Поделиться в "Мой Мир"' target="_blank" onclick="Share('mail.ru', 'https://the-alex-mark.github.io'); return false;" class="ico-at"><i class="icon-at"></i></a></li>
+							</ul>
+						</div>
+					</div>
+	
+					<!-- Контент -->
+					<iframe class="md-iframe" src="" frameborder="0"></iframe>
+	
+					<!-- Кнопка закрытия окна -->
+					<div class="md-footer">
+						<div class="md-close-end button1" onclick="CloseArticle(); return;">Закрыть</div>
+					</div>
+	
+				</div>
+			</div>
+		</div>
 
 		<div class="container">
 
@@ -101,6 +140,17 @@
 				<div class="col-lg-9">
 					<div class="Content">
 						<div class="Content-General">
+
+							<div class="new" onclick="ShowArticle('Resources/News/new-1.html', '30 августа 2019 в 13:01', '920')">
+								<img src="Resources/Image-1.jpg" alt="">
+								<div class="new-content">
+									<h4>Заголовок</h4>
+									<p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur veritatis laudantium enim eum sunt vero cumque esse eos labore ut illum iusto vel minus nemo hic, omnis optio? Facilis, at!Veritatis sit quasi ...</p>
+									<div class="new-footer">
+										<div class="button1 custom-paddign">Подробнее ...</div>
+									</div>
+								</div>
+							</div>
 
 							<div class="New">
 								<div class="Header">
