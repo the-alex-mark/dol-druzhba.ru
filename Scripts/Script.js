@@ -5,6 +5,9 @@ $(document).ready(function($) {
 
 	let _vk = document.getElementsByClassName('sl-vk')[0];
 	_vk.href = _information['social']["vk"];
+
+	let _instagram = document.getElementsByClassName('sl-instagram')[0];
+	_instagram.href = _information['social']["instagram"];
 	
 	let _copyright = document.getElementsByClassName('Copyright')[0].getElementsByTagName('p')[0];
 	_copyright.innerHTML = _information["copyright"];
