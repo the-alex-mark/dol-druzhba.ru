@@ -1,14 +1,14 @@
 /* Подключение сторонних шрифтов */
 @import url("Fonts.css");
 
-.new {
+.newr {
     display: flex;
     /* align-items: center; */
     /* flex-wrap: wrap; */
     /* flex-direction: column; */
     /* align-content: space-between; */
 
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
     padding: 0;
     /* max-height: 150px; */
     /* border: 1px solid rgb(219, 231, 235); */
@@ -22,7 +22,7 @@
 	-webkit-user-select: none; /* Google Chrome, Opera Next, Safari */
 }
 
-.new img {
+.newr img {
     display: block;
     margin: 0;
     padding: 0;
