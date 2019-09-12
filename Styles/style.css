@@ -1,0 +1,106 @@
+/* Подключение сторонних шрифтов */
+@import url("Fonts.css");
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: rgb(238, 243, 245);
+}
+
+.content {
+    margin: 0;
+    padding: 30px 100px 30px 350px;
+
+    /* border: 1px solid red; */
+}
+
+.new {
+    display: flex;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    /* align-content: space-between; */
+
+    margin: 20px 0 5px 0;
+    padding: 0;
+    /* max-height: 150px; */
+    border: 1px solid rgb(219, 231, 235);
+    background-color: #FFFFFF;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+
+    -moz-user-select: none; /* Mozilla Firefox */
+	-ms-user-select: none; /* Internet Explorer (не поддерживается) */
+	-o-user-select: none; /* Opera Presto (не поддерживается) */
+	-webkit-user-select: none; /* Google Chrome, Opera Next, Safari */
+}
+
+.new img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+    max-height: 155px;
+
+    border-radius: 4px 0 0 4px;
+}
+
+.new-content {
+    position: relative;
+    margin: 0;
+    padding: 15px 20px;
+    width: 100%;
+
+    background-color: #FFFFFF;
+    /* border: 1px solid blue; */
+    border-radius: 0 5px 5px 0;
+}
+
+.new-content h4 {
+    margin: 0;
+    padding: 0 0 10px 0;
+
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 13pt;
+}
+
+.new-content p {
+    margin: 0;
+    padding: 0;
+    /* max-height: 10px; */
+    /* word-wrap: break-word; */
+    /* border: 1px solid blue; */
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 10pt;
+}
+
+.new-content a {
+    position: absolute;
+    margin: 15px 20px;
+    padding: 0;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    widows: 100%;
+
+    text-transform: none;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 8pt;
+}
+
+.new-footer {
+	display: flex;
+	justify-content: flex-end;
+	margin: 10px 0 0 0;
+	padding: 0;
+	/* border-top: 1px solid rgb(219, 231, 235); */
+	/* border: 1px solid red; */
+}
+
+.custom-paddign {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    padding: 6px 40px;
+}
