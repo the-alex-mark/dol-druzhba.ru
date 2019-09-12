@@ -240,6 +240,96 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="Scripts/Data.js"></script>
 		<script src="Scripts/Script.js"></script>
+
+		<script>
+
+				// Открывает окно поделиться в социальной сети.
+				// _social - Доменное имя социальной сети
+				// _url    - Ссылка, которой требуется поделиться
+				function Share(_social, _url) {
+					let URL = "";
+					switch (_social) {
+						case "vk.com":
+							URL = "https://vk.com/share.php?url=" + _url;
+							break;
+		
+						case "ok.ru":
+							URL = "https://connect.ok.ru/offer?url=" + _url;
+							break;
+		
+						case "facebook.com":
+							URL = "https://www.facebook.com/sharer/sharer.php?u=" + _url;
+							break;
+		
+						case "twitter.com":
+							URL = "https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fpublish.twitter.com%2F%3FbuttonType%3DTweetButton%26widget%3DButton&ref_src=twsrc%5Etfw&text=" + _url;
+							break;
+		
+						case "mail.ru":
+							URL = "https://connect.mail.ru/share?url=" + _url;
+							break;
+		
+						default:
+							console.log("Доменное имя социальной сети указано не верно!");
+							alert("Доменное имя социальной сети указано не верно!");
+							return;
+							break;
+					}
+		
+					WinOpen(URL, 700, 600);
+				}
+		
+				// Открывает окно с указанным сайтом.
+				// _url    - Адрес сайта
+				// _wigth  - Ширина окна (в PX)
+				// _height - Высота окна (в PX)
+				function WinOpen(_url, _wigth, _height)
+				{
+					var x = screen.width / 2 - _wigth / 2;
+					var y = screen.height / 2 - _height / 2;
+					window.open(_url, 'sharegplus', 'height=' + _height + ', width=' + _wigth + ', left=' + x + ', top=' + y);
+				}
+		
+				// Открывает модальное окно с выбранной новостной статьёй.
+				// _url    - Адрес статьи
+				// _date   - Дата создания
+				// _height - Высота статьи
+				function ShowArticle(_url, _date, _height)
+				{
+					// Установка полученных данных
+					$('#md-author-date').text(_date);
+					$('.md-iframe').attr('src', _url);
+					$('.md-iframe').attr('height', _height);
+					// $('.md-iframe').attr('height', $(window).height() - 250);
+		
+					// Вывод модального окна
+					$('.md-overlay').fadeIn();
+		
+					// Обнуление позиции ScrollBar
+					document.getElementById('md-overlay').scrollTo(0, 0);
+					document.body.style.overflow = 'hidden';
+				};
+		
+				// закрыть по клику вне окна
+				$(document).mouseup(function (e) { 
+					var popup = $('.md-content');
+					if (e.target!=popup[0]&&popup.has(e.target).length === 0) {
+						CloseArticle();
+						// window.location.href =  window.location.href.split("?")[0]; //"http://www.newurl.com";
+					}
+				});
+		
+				$(document).keyup(function(e) { 
+					if (e.keyCode == 27) { 
+						CloseArticle();
+					} 
+				});
+		
+				function CloseArticle() {
+					$('.md-overlay').fadeOut();
+					document.body.style.overflow = 'visible';
+				}
+			</script>
 	
 	</body>
 </html>
