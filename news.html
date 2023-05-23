@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ДОЛ "Дружба"</title>
+
+		<!-- Подключение ICON -->
+		<link rel="Shortcut Icon" href="Resources/Favicon.png">
+
+		<!-- Подключение PLUGINS -->
+		<link rel="stylesheet" href="Plugins/Slick/slick-theme.css">
+		<link rel="stylesheet" href="Plugins/Slick/slick.css">
+
+		<!-- Подключение STYLES -->
+		<link rel="stylesheet" href="Styles/fontello.css">
+		<link rel="stylesheet" href="Styles/modal-dialog.css">
+		<link rel="stylesheet" href="Styles/style.css">
+
+		<link rel="stylesheet" href="Styles/ScrollBar.css">
+		<link rel="stylesheet" href="Styles/Bootstrap-Grid.min.css">
+		<link rel="stylesheet" href="Styles/Columns.min.css">
+		<link rel="stylesheet" href="Styles/Frame.css">
+		<link rel="stylesheet" href="Styles/Content.css">
+		<link rel="stylesheet" href="Styles/Adaptive.css">
+	</head>
+
+	<body>
+		
+		<div id="md-overlay" class="md-overlay">
+			<div class="md-container">
+				<div class="md-content">
+	
+					<div class="md-title">
+	
+						<!-- Кнопка закрытия окна -->
+						<div class="md-close"></div>
+	
+						<!-- Автор статьи -->
+						<div class="md-author">
+							<img id="md-author-logo" src="Resources/Favicon.png" alt="">
+							<div class="md-author-data">
+								<b id="md-author-name">Администрация лагеря</b>
+								<small id="md-author-date">30 авг 2019 в 13:01</small>
+							</div>
+						</div>
+	
+						<!-- Поделиться -->
+						<div class="md-share">
+							<ul class="social-list">
+								<li><a title='Поделиться во "ВКонтакте"' target="_blank" onclick="Share('vk.com', 'https://the-alex-mark.github.io'); return false;" class="ico-vkontakte"><i class="icon-vkontakte"></i></a></li>
+								<li><a title='Поделиться в "Одноклассники"' target="_blank" onclick="Share('ok.ru', 'https://the-alex-mark.github.io'); return false;" class="ico-odnoklassniki"><i class="icon-odnoklassniki"></i></a></li>
+								<li><a title='Поделиться на "Facebook"' target="_blank" onclick="Share('facebook.com', 'https://the-alex-mark.github.io'); return false;" class="ico-facebook"><i class="icon-facebook"></i></a></li>
+								<li><a title='Поделиться в "Twitter"' target="_blank" onclick="Share('twitter.com', 'https://the-alex-mark.github.io'); return false;" class="ico-twitter"><i class="icon-twitter"></i></a></li>
+								<li><a title='Поделиться в "Мой Мир"' target="_blank" onclick="Share('mail.ru', 'https://the-alex-mark.github.io'); return false;" class="ico-at"><i class="icon-at"></i></a></li>
+							</ul>
+						</div>
+					</div>
+	
+					<!-- Контент -->
+					<iframe class="md-iframe" src="" frameborder="0"></iframe>
+	
+					<!-- Кнопка закрытия окна -->
+					<div class="md-footer">
+						<div class="md-close-end button1" onclick="CloseArticle(); return;">Закрыть</div>
+					</div>
+	
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+
+			<!-- HEADER -->
+			<header class="Header">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-lg-auto">
+						<a href="index.html"><img src="Resources/Favicon.png" alt='ДОЛ "Дружба"'></a>
+
+						<div class="Caption">
+							<h1>"Дружба"</h1><br><p>Детский Оздоровительный Лагерь</p>
+						</div>						
+					</div>
+					<div class="col-lg-auto">
+						<nav class="Menu Visible">
+							<ul>
+								<li><a href="index.html">Главная</a></li>
+								<li><a href="about.html">О лагере</a></li>
+								<li><a href="news.html" class="Active">Новости</a></li>
+								<li><a href="gallery.html">Галерея</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<div class="row">
+				<div class="col-lg-3">
+
+					<!-- SIDEBAR -->
+					<div class="SideBar">
+						<div id="Menu" class="Button Invisible">
+							<ul><li><a href="#">Меню</a></li></ul>
+							<div class="Icon"><hr><hr><hr></div>
+						</div>
+
+						<nav class="Menu Visible">
+							<ul>
+								<li><a href="index.html">Главная</a></li>
+								<li><a href="about.html">О лагере</a></li>
+								<li><a href="news.html" class="Active">Новости</a></li>
+								<li><a href="gallery.html">Галерея</a></li>
+								<!-- <li><a href="contacts.html">Контакты</a></li> -->
+							</ul>
+						</nav>
+
+						<div class="SideBar-Menu Visible">							
+							<ul>
+								<li><a href="#">Общая информация</a></li>
+								<li><a href="#">Размещение</a></li>
+								<li><a href="#">Программа</a></li>
+							</ul>
+						</div>
+												
+						<div class="SideBar-Category Visible">
+							<a href="https://yandex.ru/maps/?from=api-maps&l=map&ll=39.052592%2C57.225294&mode=poi&origin=jsapi_2_1_73&poi%5Bpoint%5D=39.052083%2C57.225031&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1046953834&z=17" target="_blank">
+								<div class="SideBar-Category_Caption">Мы на карте</div>
+								<img src="Resources/Map.png" alt="Мы на карте">
+							</a>
+						</div>
+
+						<div class="SideBar-Category Visible">
+							<div class="SideBar-Category_Caption">Атрибутика</div>
+							<img src="Resources/Paraphernalia.png" alt="Атрибутика">
+						</div>
+					</div>
+				</div>
+
+				<!-- CONTENT -->
+				<div class="col-lg-9">
+					<div class="Content">
+						<div class="Content-General">
+
+							<div style="margin: 0 0 15px 0;" class="newr" onclick="ShowArticle('Resources/News/new-1.html', '30 августа 2019 в 13:01', '920')">
+								<img style="max-height: 155px;" src="Resources/Gallery/Image-1.jpg" alt="">
+								<div class="new-content">
+									<h4>Заголовок</h4>
+									<p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur veritatis laudantium enim eum sunt vero cumque esse eos labore ut illum iusto vel minus nemo hic, omnis optio? Facilis, at!Veritatis sit quasi ...</p>
+									<div class="new-footer">
+										<div class="button1 custom-paddign">Подробнее ...</div>
+									</div>
+								</div>
+							</div>
+
+							<div style="margin: 0 0 15px 0;" class="newr" onclick="ShowArticle('Resources/News/new-2.html', '30 августа 2019 в 13:01', '300')">
+								<img style="max-height: 155px;" src="Resources/Gallery/Image-1.jpg" alt="">
+								<div class="new-content">
+									<h4>Заголовок</h4>
+									<p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur veritatis laudantium enim eum sunt vero cumque esse eos labore ut illum iusto vel minus nemo hic, omnis optio? Facilis, at!Veritatis sit quasi ...</p>
+									<div class="new-footer">
+										<div class="button1 custom-paddign">Подробнее ...</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="New">
+								<div class="Header">
+									<h2>Новость №2</h2>
+									<p>29.04.2018</p>
+								</div>
+								<h3>Заголовок</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, nesciunt, incidunt! Natus vitae excepturi distinctio magnam eligendi voluptatibus omnis qui ipsum dolor aliquam adipisci odit nostrum, officia dicta officiis blanditiis.			
+								</p>
+								<p>
+									Quod temporibus non, eius, magnam facilis provident blanditiis dolor qui ex praesentium adipisci, odio corporis! Commodi beatae, aperiam iure laborum nemo excepturi aliquam possimus, non assumenda esse nisi voluptatum, asperiores.
+								</p>
+								<h4>Администрация</h4>
+							</div>
+
+							<div class="New">
+								<div class="Header">
+									<h2>Новость №1</h2>
+									<p>16.03.2018</p>
+								</div>
+								<h3>Заголовок</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores ab nemo eaque odit cumque nam veniam repellendus accusantium, rem enim culpa, a amet eos dolores. Eligendi obcaecati maxime doloribus est!
+									Repudiandae magnam, veritatis ut eligendi, quo doloremque illum recusandae sit numquam ab officiis alias sapiente similique! Eos, doloribus, exercitationem. Vitae repudiandae nulla, voluptas reprehenderit vero itaque qui doloribus sapiente praesentium.
+									Alias iure, sit animi blanditiis error quam obcaecati consequuntur beatae nesciunt possimus impedit aliquam nihil, accusantium suscipit, dicta tenetur modi culpa ab ducimus dolorum! Enim reprehenderit nam eos, architecto facilis.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis alias placeat, nulla nisi hic unde sint exercitationem ducimus, et similique earum libero facilis quae consequuntur, quis maiores doloribus rem cum.
+								</p>
+								<h4>Администрация</h4>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FOOTER -->
+		<footer class="Footer">
+			<div class="container">
+				<div class="Navigation">
+					<div class="row justify-content-between">
+						<div class="col-md-auto col-6">
+							<div class="Menu">
+								<h5>Навигация</h5>
+								<p>								
+									<ul>
+										<li><a href="index.html">Главная</a></li>
+										<li><a href="about.html">О лагере</a></li>
+										<li><a href="news.html">Новости</a></li>
+										<li><a href="gallery.html">Галерея</a></li>
+										<li><a href="https://yandex.ru/maps/?from=api-maps&l=map&ll=39.052592%2C57.225294&mode=poi&origin=jsapi_2_1_73&poi%5Bpoint%5D=39.052083%2C57.225031&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1046953834&z=17" target="_blank">Карта</a></li>
+									</ul>														
+								</p>
+							</div>
+						</div>
+						<div class="col-md-auto col-6">
+							<div class="Social-Links">
+								<h5>Социальные сети</h5>
+								<p>								
+									<ul>
+										<li><a href="#" target="_blank" class="sl-vk">ВКонтакте</a></li>
+										<li><a href="#" target="_blank" class="sl-instagram">Instagram</a></li>
+									</ul>								
+								</p>
+							</div>
+						</div>
+						<div class="col-md">
+							<div class="Contacts">
+									<h5>0 000 000 00 00<br>0 000 000 00 00</h5><br>
+								<p>Россия, Ярославская область<br>Борисоглебский район, д. Степаново</p>
+							</div>
+						</div>
+					</div>
+				</div>				
+				
+				<div class="Copyright">
+					<hr><p>© ДОЛ "Дружба", 2018 г. Все права защищены.</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Подключение SCRIPTS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="Scripts/Data.js"></script>
+		<script src="Scripts/Script.js"></script>
+
+		<script>
+
+				// Открывает окно поделиться в социальной сети.
+				// _social - Доменное имя социальной сети
+				// _url    - Ссылка, которой требуется поделиться
+				function Share(_social, _url) {
+					let URL = "";
+					switch (_social) {
+						case "vk.com":
+							URL = "https://vk.com/share.php?url=" + _url;
+							break;
+		
+						case "ok.ru":
+							URL = "https://connect.ok.ru/offer?url=" + _url;
+							break;
+		
+						case "facebook.com":
+							URL = "https://www.facebook.com/sharer/sharer.php?u=" + _url;
+							break;
+		
+						case "twitter.com":
+							URL = "https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fpublish.twitter.com%2F%3FbuttonType%3DTweetButton%26widget%3DButton&ref_src=twsrc%5Etfw&text=" + _url;
+							break;
+		
+						case "mail.ru":
+							URL = "https://connect.mail.ru/share?url=" + _url;
+							break;
+		
+						default:
+							console.log("Доменное имя социальной сети указано не верно!");
+							alert("Доменное имя социальной сети указано не верно!");
+							return;
+							break;
+					}
+		
+					WinOpen(URL, 700, 600);
+				}
+		
+				// Открывает окно с указанным сайтом.
+				// _url    - Адрес сайта
+				// _wigth  - Ширина окна (в PX)
+				// _height - Высота окна (в PX)
+				function WinOpen(_url, _wigth, _height)
+				{
+					var x = screen.width / 2 - _wigth / 2;
+					var y = screen.height / 2 - _height / 2;
+					window.open(_url, 'sharegplus', 'height=' + _height + ', width=' + _wigth + ', left=' + x + ', top=' + y);
+				}
+		
+				// Открывает модальное окно с выбранной новостной статьёй.
+				// _url    - Адрес статьи
+				// _date   - Дата создания
+				// _height - Высота статьи
+				function ShowArticle(_url, _date, _height)
+				{
+					// Установка полученных данных
+					$('#md-author-date').text(_date);
+					$('.md-iframe').attr('src', _url);
+					$('.md-iframe').attr('height', _height);
+					// $('.md-iframe').attr('height', $(window).height() - 250);
+		
+					// Вывод модального окна
+					$('.md-overlay').fadeIn();
+		
+					// Обнуление позиции ScrollBar
+					document.getElementById('md-overlay').scrollTo(0, 0);
+					document.body.style.overflow = 'hidden';
+				};
+		
+				// закрыть по клику вне окна
+				$(document).mouseup(function (e) { 
+					var popup = $('.md-content');
+					if (e.target!=popup[0]&&popup.has(e.target).length === 0) {
+						CloseArticle();
+						// window.location.href =  window.location.href.split("?")[0]; //"http://www.newurl.com";
+					}
+				});
+		
+				$(document).keyup(function(e) { 
+					if (e.keyCode == 27) { 
+						CloseArticle();
+					} 
+				});
+		
+				function CloseArticle() {
+					$('.md-overlay').fadeOut();
+					document.body.style.overflow = 'visible';
+				}
+			</script>
+	
+	</body>
+</html>
