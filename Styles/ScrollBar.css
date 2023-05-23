@@ -7,7 +7,8 @@
 
 /* -- Цвет фона ScrollBar -- */
 ::-webkit-scrollbar-track {
-    background-color: rgb(238, 243, 245);
+    /* background-color: rgb(238, 243, 245); */
+    background-color: transparent
 }
 
 /* -- Цвет THUMB -- */
