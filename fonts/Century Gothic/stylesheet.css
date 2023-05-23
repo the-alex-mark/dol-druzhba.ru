@@ -1,0 +1,17 @@
+/* -- Century Gothic -- */
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('Century Gothic - Regular.ttf');
+
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Century Gothic';
+    src: url('Century Gothic - Bold.ttf');
+
+    font-weight: bold;
+	font-style: normal;
+}

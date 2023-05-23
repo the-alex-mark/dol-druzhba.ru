@@ -1,0 +1,46 @@
+/* -- Подключение файлов с настройками шрифтов -- */
+@import url('../fonts/Montserrat/stylesheet.css');
+@import url('../fonts/Montserrat Alternates/stylesheet.css');
+@import url('../fonts/Century Gothic/stylesheet.css');
+@import url('../fonts/Roboto/stylesheet.css');
+
+/* -- Определение переменных -- */
+:root {
+    /* Цветовая палитра */
+    --color-background: rgb(238, 243, 245);
+    --color-island: #FFFFFF;
+    /* --color-accent: #FE9800; */
+    --color-accent: rgb(255, 220, 96);
+    --color-font: #000000;
+    --color-border: rgba(255, 255, 255, 0.125);
+    --color-card: #353849;
+
+    /* Шрифты */
+    --font-menu: 'Roboto', sans-serif;
+    --font-one: 'Montserrat', sans-serif;
+    --font-two: 'Montserrat Alternates', sans-serif;
+
+    /* Размер контента */
+    --header-max-width: 1700px; /* 1700px */
+    --content-max-width: 1140px;
+    --content-padding: 40px;
+    
+    /* Прочее */
+    --section-corner: 120px;
+}
+
+@media (max-width: 1760px) {
+    :root {
+        --header-max-width: 1140px;
+    }
+}
+@media (max-width: 823px) {
+    :root {
+        --section-corner: 50px;
+        /* --content-padding: 20px; */
+    }
+}
+
+.border { border: 1px solid red; }
+.no-scroll { overflow: hidden; }
+.no-select { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; }
